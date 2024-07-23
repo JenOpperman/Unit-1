@@ -8,14 +8,22 @@
             gap: 5%;
         }
      
-    header {
+        @media screen and (min-width: 500px) {
+        
+        } header {
     display: flex;
     /* how to use flex https://flexbox.malven.co/ */
     justify-content: space-between; 
     align-items: center;
     padding: 10px;
 }
-
+#hydro {
+    display: flex;
+    justify-content:space-evenly;
+    border-style:double 40px;
+    
+    
+}
  footer a {
      color: #6ce0e0;
  }
@@ -29,7 +37,14 @@
 }
 }
     
-    #hydro-dipcup {
+    @media screen and (min-width: 700px){
+
+    } #hydrodipcup {
         width: 30%;
         
     }
+    
+    
+
+        
+    
