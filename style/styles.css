@@ -1,0 +1,35 @@
+
+        body {
+            font-family: "Caveat", cursive;;
+            margin: 0;
+            padding: 20px;
+            background-color: #224f4d;
+            color: #c665bc;
+            gap: 5%;
+        }
+     
+    header {
+    display: flex;
+    /* how to use flex https://flexbox.malven.co/ */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+
+ footer a {
+     color: #6ce0e0;
+ }
+#navigation {
+    display: flex;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color:#6ce0e0;
+        text-align:left;
+}
+}
+    
+    #hydro-dipcup {
+        width: 30%;
+        
+    }
