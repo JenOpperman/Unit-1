@@ -14,42 +14,71 @@
 </head>
 <body>
     <header>
-        <nav id="navigation">
-            
-            <a href="../Unit 1/Index/Products.html">Products</a>
-            <a href="../Unit 1/Index/contact.html">Contact</a>
-        </nav>
+        <h1>
+        
 
-        <div>
-            <img
-                id="logo"
-                src="../Images/logo_small.jpg"
-                alt="logo of my business"
-            />
-        </div>
+            <div>
+                <img
+                    id="logo"
+                    src="../Images/logo_small.jpg"
+                    alt="logo of my business"
+                />
+            </div>
+            <nav id="navigation">
+                <a class=”icon”>
+                    <i class="fa fa-bars"></i>
+                    <a class="icon" onclick="openMobileNavigationMenu()">
+                        <i class="fa fa-bars"></i>
+                        
+                    </a>
+                <a href="../Index/Products.html">Products</a>
+                <a href="../Index/contact.html">Contact</a>
+            </nav>
+        </h1>
 
        
     </header>
 
     <main>
-        <h1>Double Fistin' JWOWW Style</h1>
-        <p>
-            You dream it, I make it! Choose your tumbler size, tell me what
-            you want on it and I will make it.
-        </p>
-       
+        <h3>Double Fistin' JWOWW Style</h3>
+        
        
     <div id="hydro">
         <p>
+            You dream it, I make it! <br> Choose your tumbler size,<br> tell me what
+            you want on it <br> and I will make it.<br>
+       
             I have made over 100 cups <br> within a year's time. <br>
             I would love to create <br> what your wildest dream.
         </p>
        
         <img id="hydrodipcup" src="./images/swirl cup.jpg" />
+
     </div>
+
+    <div class="slideshow-container">
+        <img src="Images/buchaneers.jpg" alt="buchaneers cup">
+        <img src="./Images/cards.jpg" alt="cardinals cup">
+        <img src="../Images/cowboys.jpg" alt="cowboys cup">
+        <img src="../Images/cubs.jpg" alt="cubs cup">
+        <img src="../Images/cups.jpg" alt="Picture of different swirl cups">
+        <img src="../Images/hawkeyes.jpg" alt="Hawkeyes cup">
+        <img src="../Images/mancup.jpg" alt="an example of a cup for a man">
+        <img src="../Images/purpleteacher.jpg" alt="a cup that was done for a teacher gift in purle">
+        <img src="../Images/tealteacher.jpg" alt="a cup that was done for a teacher gift in teal">
+    </div>
+
     </main>
     <footer>
         <p>Thank you for visiting our website, please visit again!</p>
     </footer>
+    function openMobileNavigationMenu() {
+        var x = document.getElementById("navigation");
+        if (x.className === "") {
+        x.className += "responsive";
+        } else {
+        x.className = "";
+        }
+       }
 </body>
 </html>

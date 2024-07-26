@@ -12,11 +12,6 @@
 </head>
 <body>
     <header>
-        <nav id="navigation">
-            <a href="../Index.html">Home</a>
-            <a href="../Index/Products.html">Products</a>  
-        </nav>
-
         <div>
             <img
                 id="logo"
@@ -24,11 +19,22 @@
                 alt="logo of my business"
             />
         </div>
+        <nav id="navigation">
+            <a class=”icon”>
+                <i class="fa fa-bars"></i>
+                </a>
+                <a class="icon" onclick="openMobileNavigationMenu()">
+                    <i class="fa fa-bars"></i>
+                    
+                </a>
+            <a href="../Index.html">Home</a>
+            <a href="../Index/Products.html">Products</a>  
+        </nav>
 
        
     </header>
     <main>
-    <h1>Contact Us  </h1> 
+    <h4>Contact Us  </h4> 
     <form>
     <p>Please place your order or give feedback below: </p>
 
@@ -74,7 +80,28 @@
 
     </div>
     </form>  
+    <header>
+        <div class="slideshow-container">
+            <img src="../Images/buchaneers.jpg" alt="buchaneers cup">
+            <img src="../Images/cards.jpg" alt="cardinals cup">
+            <img src="../Images/cowboys.jpg" alt="cowboys cup">
+            <img src="../Images/cubs.jpg" alt="cubs cup">
+            <img src="../Images/cups.jpg" alt="Picture of different swirl cups">
+            <img src="../Images/hawkeyes.jpg" alt="Hawkeyes cup">
+            <img src="../Images/mancup.jpg" alt="an example of a cup for a man">
+            <img src="../Images/purpleteacher.jpg" alt="a cup that was done for a teacher gift in purle">
+            <img src="../Images/tealteacher.jpg" alt="a cup that was done for a teacher gift in teal">
+        </div>
     </main>
+
     <footer>Thank you for visiting our webiste.  Please visit again!</footer>
+    function openMobileNavigationMenu() {
+        var x = document.getElementById("navigation");
+        if (x.className === "") {
+        x.className += "responsive";
+        } else {
+        x.className = "";
+        }
+       }
 </body>
 </html>
