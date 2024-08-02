@@ -31,16 +31,28 @@ p{
 }
 h4{
     color:#6ce0e0;
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 50px;
     text-align: center;
 }
 h2{
     color: #6ce0e0;
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 50px;
     text-align: center;
     
 }
 h3{
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 50px;
     text-align: center;
     color: #6ce0e0;
@@ -106,6 +118,38 @@ h3{
     responsive a:not(.icon) {
         display: block;
        }
-       
-        
-    
+
+       function openMobileNavigationMenu() {
+        var x = document.getElementById("navigation");
+        if (x.className === "") {
+        x.className += "responsive";
+        } else {
+        x.className = "";
+        }
+       }
+           
+        form {
+    }
+        input[type= "submit"]{
+            align-self: end;
+            width: 100px;
+            height: 25px
+        }           
+        @media screen and (max-width: 500px) {
+            form {
+                margin:0;
+                font-size: : 2em;
+            }
+            input {
+                height: 50 px;
+            }
+            input[type="submit"]{
+                height: 50px;
+            }
+            table {
+                border-spacing: 15px;
+            }
+            div{
+                overflow-x: auto;
+            }
+            
