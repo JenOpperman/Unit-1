@@ -1,44 +1,31 @@
+body {
+    font-family: "Caveat", cursive;
+    margin: 0;
+    padding: 20px;
+    background-color: #224f4d;
+    color: #c665bc;
+    gap: 5%;
+}
 
-        body {
-            font-family: "Caveat", cursive;;
-            margin: 0;
-            padding: 20px;
-            background-color: #224f4d;
-            color: #c665bc;
-            gap: 5%;
-        }
-     
-        @media screen and (max-width: 500px) {
-        
-        } 
-        h1 {
+/* @media screen and (max-width: 500px) {
+
+}  */
+h1 {
     display: flex;
     /* how to use flex https://flexbox.malven.co/ */
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 10px;
 }
 #hydro {
     display: flex;
-    justify-content:space-evenly;
-    border-style:double 40px;
-    
-    
+    justify-content: space-evenly;
+    border-style: double 40px;
 }
-p{
+p {
     font-size: xx-large;
-
 }
-h4{
-    color:#6ce0e0;
-    font-family: "Kalnia Glaze", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 50px;
-    text-align: center;
-}
-h2{
+h4 {
     color: #6ce0e0;
     font-family: "Kalnia Glaze", serif;
     font-optical-sizing: auto;
@@ -46,9 +33,17 @@ h2{
     font-style: normal;
     font-size: 50px;
     text-align: center;
-    
 }
-h3{
+h2 {
+    color: #6ce0e0;
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+h3 {
     font-family: "Kalnia Glaze", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -57,88 +52,114 @@ h3{
     text-align: center;
     color: #6ce0e0;
 }
- footer  {
-     color: #6ce0e0;
-     text-align: center;
-     
- }
+footer {
+    color: #6ce0e0;
+    text-align: center;
+}
 #navigation {
     display: flex;
 
     gap: 20px;
     a {
         text-decoration: none;
-        color:#6ce0e0;
+        color: #6ce0e0;
     }
 }
-    
-    @media screen and (min-width: 500px){
-    } #hydrodipcup {
-        width: 20%;
-        gap: 20px
-        
-    }
-    
-    div.slideshow-container {
-        background-color: #9b9797;
-        max-width: 1000px;
-        position: relative;
-        white-space: nowrap;
-        margin:left;
-      }
-    
+
+/* @media screen and (min-width: 500px) { removed empty rule set
+} */
+#hydrodipcup {
+    width: 20%;
+    gap: 20px;
+}
+
+div.slideshow-container {
+    background-color: #9b9797;
+    max-width: 1000px;
+    position: relative;
+    white-space: nowrap;
+    margin: left;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
+}
 
-  @media only screen and (min-width: 300px) {
-    
-  }
-  nav a:not(.icon) {
-    display: none;
+@keyframes fade {
+    from {
+        opacity: 0.4;
     }
+    to {
+        opacity: 1;
+    }
+}
+
+/* @media only screen and (min-width: 300px) { removed empty rule set
+} */
+nav a:not(.icon) {
+    display: none;
+}
     @media screen and (min-width: 300px) {
     .icon {
-    display: none;
+        display: none;
     }
-     nav a:not(.icon) {
-     display: inline;
-     }
+    nav a:not(.icon) {
+        display: inline;
     }
     responsive a:not(.icon) {
         display: block;
        }
+    }
    
         form {
+
+}
+responsive a:not(.icon) {
+    display: block;
+}
+/* What is this where did you get this?? */
+/* function openMobileNavigationMenu{
+        var x = document.getElementById("navigation");
+        if (x.className === "") {
+        x.className += "responsive";
+        } else {
+        x.className = "";
+        } */
+/* } */
+
+/* form {
+    } */
+input[type="submit"] {
+    align-self: end;
+    width: 100px;
+    height: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    /* Fixed the images for mobile */
+    div.slideshow-container {
+        display: flex;
+        flex-direction: column;
     }
-        input[type= "submit"]{
-            align-self: end;
-            width: 100px;
-            height: 25px
-        }           
-        @media screen and (max-width: 500px) {
-            form {
-                margin:0;
-                font-size: 2em;
-            }
-            input {
-                height: 50 px;
-            }
-            input[type="submit"]{
-                height: 50px;
-            }
-            table {
-                border-spacing: 15px;
-            }
-            div{
-                overflow-x: auto;
-               }
-            }
-            
+    }
+    div.slideshow-container img {
+        margin: 5px;
+    }
+
+    form {
+        margin: 0;
+        font-size: 2em;
+    }
+    input {
+        height: 50 px;
+    }
+    input[type="submit"] {
+        height: 50px;
+    }
+    table {
+        border-spacing: 15px;
+    }
+    div {
+        overflow-x: auto;
+    }
