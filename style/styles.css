@@ -115,16 +115,7 @@ h3{
     responsive a:not(.icon) {
         display: block;
        }
-
-       function openMobileNavigationMenu{
-        var x = document.getElementById("navigation");
-        if (x.className === "") {
-        x.className += "responsive";
-        } else {
-        x.className = "";
-        }
-       }
-           
+   
         form {
     }
         input[type= "submit"]{
