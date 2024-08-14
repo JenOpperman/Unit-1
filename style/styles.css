@@ -118,18 +118,7 @@ nav a:not(.icon) {
 responsive a:not(.icon) {
     display: block;
 }
-/* What is this where did you get this?? */
-/* function openMobileNavigationMenu{
-        var x = document.getElementById("navigation");
-        if (x.className === "") {
-        x.className += "responsive";
-        } else {
-        x.className = "";
-        } */
-/* } */
 
-/* form {
-    } */
 input[type="submit"] {
     align-self: end;
     width: 100px;
